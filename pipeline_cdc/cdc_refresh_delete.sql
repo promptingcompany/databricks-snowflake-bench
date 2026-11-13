@@ -1,0 +1,1 @@
+DELETE FROM {OUT}.t2_daily WHERE d_date IN (SELECT DISTINCT d_date FROM {OUT}.cdc)

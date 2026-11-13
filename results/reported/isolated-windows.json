@@ -1,0 +1,20 @@
+[
+  {
+    "option": "D2",
+    "scale": "10",
+    "start_utc": "2026-10-12T18:54:45.324512+00:00",
+    "end_utc": "2026-10-12T19:02:59.575055+00:00",
+    "exit": 0,
+    "results_file": "results/pipeline-D2-sf10-20261012-115445.jsonl",
+    "stopped_cleanly": true
+  },
+  {
+    "option": "S1",
+    "scale": "10",
+    "start_utc": "2026-10-12T19:03:03.883901+00:00",
+    "end_utc": "2026-10-12T19:05:46.019604+00:00",
+    "exit": 0,
+    "results_file": "results/pipeline-S1-sf10-20261012-120304.jsonl",
+    "stopped_cleanly": true
+  }
+]

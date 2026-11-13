@@ -1,0 +1,56 @@
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "BASE_T1", "ok": true, "seconds": 97.22311949997675, "query_id": "01c85bf9-0309-cd38-0012-d6020008201e"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "BASE_T2", "ok": true, "seconds": 8.264670124975964, "query_id": "01c85bfa-0309-cd4a-0012-d60200080016"}
+{"option": "S2", "engine": "snowflake", "step": "CHECK", "batch": 0, "ok": true, "checksums": {"t1": ["2879987999.00", "5259716679835.61", "138893943134.00", "4733657758647.21", "526031726151.43"], "t2": ["220704.00", "5259716679835.61", "138893943134.00", "526031726151.43", "2879987999.00"], "t2_matches_t1": true}}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B1_cdc_changes", "batch": 1, "ok": true, "seconds": 13.421039291017223, "query_id": "01c85bfb-0309-cd3a-0012-d6020007f026"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B1_cdc_merge", "batch": 1, "ok": true, "seconds": 61.07524012500653, "query_id": "01c85bfb-0309-cd34-0012-d60200087022"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B1_cdc_refresh_delete", "batch": 1, "ok": true, "seconds": 1.3159937089658342, "query_id": "01c85bfc-0309-cd38-0012-d60200082022"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B1_cdc_refresh_insert", "batch": 1, "ok": true, "seconds": 3.503683709015604, "query_id": "01c85bfc-0309-cd45-0012-d6020007d036"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B1_cdc_drop", "batch": 1, "ok": true, "seconds": 0.9182824580348097, "query_id": "01c85bfc-0309-cd3a-0012-d6020007f02a"}
+{"option": "S2", "engine": "snowflake", "step": "CHECK", "batch": 1, "ok": true, "checksums": {"t1": ["2880410561.00", "5260764754605.73", "138914754667.00", "4734363784191.12", "526110826741.14"], "t2": ["220704.00", "5260764754605.73", "138914754667.00", "526110826741.14", "2880410561.00"], "t2_matches_t1": true}}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B2_cdc_changes", "batch": 2, "ok": true, "seconds": 10.906290916958824, "query_id": "01c85bfc-0309-cd34-0012-d60200087026"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B2_cdc_merge", "batch": 2, "ok": true, "seconds": 53.01835420797579, "query_id": "01c85bfc-0309-cd34-0012-d6020008702a"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B2_cdc_refresh_delete", "batch": 2, "ok": true, "seconds": 0.9891168749891222, "query_id": "01c85bfd-0309-cd38-0012-d6020008202e"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B2_cdc_refresh_insert", "batch": 2, "ok": true, "seconds": 3.4254718750016764, "query_id": "01c85bfd-0309-cd45-0012-d6020007d03a"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B2_cdc_drop", "batch": 2, "ok": true, "seconds": 0.4286587089882232, "query_id": "01c85bfd-0309-cd34-0012-d6020008702e"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B3_cdc_changes", "batch": 3, "ok": true, "seconds": 11.203517457994167, "query_id": "01c85bfd-0309-cd45-0012-d6020007d03e"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B3_cdc_merge", "batch": 3, "ok": true, "seconds": 53.64188675000332, "query_id": "01c85bfd-0309-cd38-0012-d60200082032"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B3_cdc_refresh_delete", "batch": 3, "ok": true, "seconds": 1.1456504170200787, "query_id": "01c85bfe-0309-cd4a-0012-d6020008001a"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B3_cdc_refresh_insert", "batch": 3, "ok": true, "seconds": 3.203643209009897, "query_id": "01c85bfe-0309-cd34-0012-d60200087032"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B3_cdc_drop", "batch": 3, "ok": true, "seconds": 0.3061145829851739, "query_id": "01c85bfe-0309-cd38-0012-d60200082036"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B4_cdc_changes", "batch": 4, "ok": true, "seconds": 11.253619957948104, "query_id": "01c85bfe-0309-cd45-0012-d6020007d042"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B4_cdc_merge", "batch": 4, "ok": true, "seconds": 52.06527204194572, "query_id": "01c85bfe-0309-cd4a-0012-d6020008001e"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B4_cdc_refresh_delete", "batch": 4, "ok": true, "seconds": 1.325244040985126, "query_id": "01c85bff-0309-cd3a-0012-d6020007f04a"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B4_cdc_refresh_insert", "batch": 4, "ok": true, "seconds": 3.0120810830267146, "query_id": "01c85bff-0309-cd34-0012-d6020008703a"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B4_cdc_drop", "batch": 4, "ok": true, "seconds": 0.18857195798773319, "query_id": "01c85bff-0309-cd34-0012-d6020008703e"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B5_cdc_changes", "batch": 5, "ok": true, "seconds": 11.201923749991693, "query_id": "01c85bff-0309-cd38-0012-d6020008203e"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B5_cdc_merge", "batch": 5, "ok": true, "seconds": 49.857532375026494, "query_id": "01c85c00-0309-cd4a-0012-d6020008002a"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B5_cdc_refresh_delete", "batch": 5, "ok": true, "seconds": 1.0245427909540012, "query_id": "01c85c00-0309-cd38-0012-d60200082042"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B5_cdc_refresh_insert", "batch": 5, "ok": true, "seconds": 2.952179832966067, "query_id": "01c85c00-0309-cd41-0012-d6020007e016"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B5_cdc_drop", "batch": 5, "ok": true, "seconds": 0.538497457979247, "query_id": "01c85c00-0309-cd39-0012-d60200085026"}
+{"option": "S2", "engine": "snowflake", "step": "CHECK", "batch": 5, "ok": true, "checksums": {"t1": ["2881967561.00", "5264639967746.45", "138991525955.00", "4736982510462.57", "526400639103.35"], "t2": ["220704.00", "5264639967746.45", "138991525955.00", "526400639103.35", "2881967561.00"], "t2_matches_t1": true}}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B6_cdc_changes", "batch": 6, "ok": true, "seconds": 12.106095166993327, "query_id": "01c85c00-0309-cd45-0012-d6020007d04e"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B6_cdc_merge", "batch": 6, "ok": true, "seconds": 48.869955667003524, "query_id": "01c85c01-0309-cd4a-0012-d6020008002e"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B6_cdc_refresh_delete", "batch": 6, "ok": true, "seconds": 1.2620927499956451, "query_id": "01c85c02-0309-cd45-0012-d6020007d056"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B6_cdc_refresh_insert", "batch": 6, "ok": true, "seconds": 2.9706508339731954, "query_id": "01c85c02-0309-cd3a-0012-d6020007f052"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B6_cdc_drop", "batch": 6, "ok": true, "seconds": 0.21331512497272342, "query_id": "01c85c02-0309-cd3a-0012-d6020007f056"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B7_cdc_changes", "batch": 7, "ok": true, "seconds": 11.047717209032271, "query_id": "01c85c02-0309-cd3a-0012-d6020007f05a"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B7_cdc_merge", "batch": 7, "ok": true, "seconds": 55.06924375001108, "query_id": "01c85c02-0309-cd38-0012-d60200082046"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B7_cdc_refresh_delete", "batch": 7, "ok": true, "seconds": 1.5306896669790149, "query_id": "01c85c03-0309-cd39-0012-d6020008502e"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B7_cdc_refresh_insert", "batch": 7, "ok": true, "seconds": 2.8150112089933828, "query_id": "01c85c03-0309-cd41-0012-d6020007e022"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B7_cdc_drop", "batch": 7, "ok": true, "seconds": 0.401368583959993, "query_id": "01c85c03-0309-cd3a-0012-d6020007f05e"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B8_cdc_changes", "batch": 8, "ok": true, "seconds": 12.453309083997738, "query_id": "01c85c03-0309-cd34-0012-d6020008704a"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B8_cdc_merge", "batch": 8, "ok": true, "seconds": 54.80119041696889, "query_id": "01c85c03-0309-cd45-0012-d6020007d05a"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B8_cdc_refresh_delete", "batch": 8, "ok": true, "seconds": 1.081119165988639, "query_id": "01c85c04-0309-cd4a-0012-d60200080036"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B8_cdc_refresh_insert", "batch": 8, "ok": true, "seconds": 3.6413457919843495, "query_id": "01c85c04-0309-cd39-0012-d60200085032"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B8_cdc_drop", "batch": 8, "ok": true, "seconds": 0.33300645800773054, "query_id": "01c85c04-0309-cd45-0012-d6020007d05e"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B9_cdc_changes", "batch": 9, "ok": true, "seconds": 12.985780749993864, "query_id": "01c85c04-0309-cd3a-0012-d6020007f06a"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B9_cdc_merge", "batch": 9, "ok": true, "seconds": 58.912973499973305, "query_id": "01c85c04-0309-cd41-0012-d6020007e02e"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B9_cdc_refresh_delete", "batch": 9, "ok": true, "seconds": 1.2053674159687944, "query_id": "01c85c05-0309-cd39-0012-d60200085036"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B9_cdc_refresh_insert", "batch": 9, "ok": true, "seconds": 3.293647999991663, "query_id": "01c85c05-0309-cd45-0012-d6020007d062"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B9_cdc_drop", "batch": 9, "ok": true, "seconds": 0.26232454198179767, "query_id": "01c85c05-0309-cd3a-0012-d6020007f06e"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B10_cdc_changes", "batch": 10, "ok": true, "seconds": 13.184991499991156, "query_id": "01c85c05-0309-cd45-0012-d6020007d066"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B10_cdc_merge", "batch": 10, "ok": true, "seconds": 60.53270283294842, "query_id": "01c85c05-0309-cd3a-0012-d6020007f072"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B10_cdc_refresh_delete", "batch": 10, "ok": true, "seconds": 1.500161416013725, "query_id": "01c85c06-0309-cd4a-0012-d60200080046"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B10_cdc_refresh_insert", "batch": 10, "ok": true, "seconds": 2.9991878339787945, "query_id": "01c85c06-0309-cd3a-0012-d6020007f076"}
+{"option": "S2", "engine": "snowflake", "scale": "1000", "step": "B10_cdc_drop", "batch": 10, "ok": true, "seconds": 0.2892845830065198, "query_id": "01c85c07-0309-cd38-0012-d60200082056"}
+{"option": "S2", "engine": "snowflake", "step": "CHECK", "batch": 10, "ok": true, "checksums": {"t1": ["2885359170.00", "5273081534975.76", "139158673761.00", "4742680443395.73", "527032080383.03"], "t2": ["220704.00", "5273081534975.76", "139158673761.00", "527032080383.03", "2885359170.00"], "t2_matches_t1": true}}

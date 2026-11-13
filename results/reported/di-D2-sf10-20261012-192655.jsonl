@@ -1,0 +1,105 @@
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ddl_dim_customer", "phase": "INIT", "batch": 0, "ok": true, "seconds": 3.060161542, "query_id": "01f1c6ad-90cb-1e80-866e-8ce201261ce7"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ddl_dim_account", "phase": "INIT", "batch": 0, "ok": true, "seconds": 1.733491292, "query_id": "01f1c6ad-929e-14fb-badc-831c189eda8c"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ddl_dim_security", "phase": "INIT", "batch": 0, "ok": true, "seconds": 2.039223667, "query_id": "01f1c6ad-93cd-1be0-b65f-9075d9af1ef5"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ddl_fact_trade", "phase": "INIT", "batch": 0, "ok": true, "seconds": 1.7250064169999995, "query_id": "01f1c6ad-94de-1213-a043-8f6115a192d1"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ddl_fact_market", "phase": "INIT", "batch": 0, "ok": true, "seconds": 1.6683322920000005, "query_id": "01f1c6ad-95e5-19ad-a44d-f96457f9cf0d"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_account", "phase": "INGEST", "batch": 1, "ok": true, "seconds": 12.815347041, "query_id": "01f1c6ad-96e4-1220-b0d8-d1d53d8eaa98"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_trade", "phase": "INGEST", "batch": 1, "ok": true, "seconds": 14.433892667000002, "query_id": "01f1c6ad-9e88-12b4-80f7-874dba5b871e"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_trade_history", "phase": "INGEST", "batch": 1, "ok": true, "seconds": 8.417322542, "query_id": "01f1c6ad-a722-1562-9f36-50aa910a3379"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_market", "phase": "INGEST", "batch": 1, "ok": true, "seconds": 5.136406166999997, "query_id": "01f1c6ad-ac26-191c-9ae9-759ff83fb270"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_ref_trade_type", "phase": "INGEST", "batch": 1, "ok": true, "seconds": 8.699606000000003, "query_id": "01f1c6ad-af36-1f98-9b7a-1a685f9828d1"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_ref_status_type", "phase": "INGEST", "batch": 1, "ok": true, "seconds": 2.6569181250000042, "query_id": "01f1c6ad-b466-1360-b038-03faebc98167"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_ref_industry", "phase": "INGEST", "batch": 1, "ok": true, "seconds": 2.740811624999992, "query_id": "01f1c6ad-b5fb-1830-be3f-ed470f4633ea"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_ref_tax_rate", "phase": "INGEST", "batch": 1, "ok": true, "seconds": 2.7120698749999974, "query_id": "01f1c6ad-b79e-1a44-b841-99e67f48acf8"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_ref_calendar", "phase": "INGEST", "batch": 1, "ok": true, "seconds": 2.6927698340000035, "query_id": "01f1c6ad-b93b-1a6d-ab39-9bb96f964e76"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_customer", "phase": "INGEST", "batch": 1, "ok": true, "seconds": 11.148594250000002, "query_id": "01f1c6ad-bad6-1b82-946b-e3148ff0a346"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_security", "phase": "INGEST", "batch": 1, "ok": true, "seconds": 3.0032349159999967, "query_id": "01f1c6ad-c17c-15b0-9635-a2ccdd59e33a"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 1, "table": "stg_account", "got": 2000000, "expected": 2000000, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 1, "table": "stg_trade", "got": 20000000, "expected": 20000000, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 1, "table": "stg_trade_history", "got": 40000000, "expected": 40000000, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 1, "table": "stg_market", "got": 7500000, "expected": 7500000, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 1, "table": "ref_trade_type", "got": 5, "expected": 5, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 1, "table": "ref_status_type", "got": 6, "expected": 6, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 1, "table": "ref_industry", "got": 12, "expected": 12, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 1, "table": "ref_tax_rate", "got": 20, "expected": 20, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 1, "table": "ref_calendar", "got": 1370, "expected": 1370, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 1, "table": "stg_customer", "got": 1000000, "expected": 1000000, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 1, "table": "stg_security", "got": 6000, "expected": 6000, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_customer_close", "phase": "TRANSFORM", "batch": 1, "ok": true, "seconds": 2.5022053750000026, "query_id": "01f1c6ad-c62e-127e-81aa-5b65229ad5c2"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_customer_insert", "phase": "TRANSFORM", "batch": 1, "ok": true, "seconds": 3.3477744169999966, "query_id": "01f1c6ad-c7ac-1852-87b4-f941b93c3eeb"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_account_close", "phase": "TRANSFORM", "batch": 1, "ok": true, "seconds": 1.0943251669999938, "query_id": "01f1c6ad-c9ab-14f7-8b39-e98ec44b3f9c"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_account_insert", "phase": "TRANSFORM", "batch": 1, "ok": true, "seconds": 2.4263226249999974, "query_id": "01f1c6ad-ca53-1093-abc3-96a229a759c5"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_security_merge", "phase": "TRANSFORM", "batch": 1, "ok": true, "seconds": 2.315805499999996, "query_id": "01f1c6ad-cbc5-1e2c-889f-9bd076263297"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_fact_trade_insert", "phase": "TRANSFORM", "batch": 1, "ok": true, "seconds": 5.013809291000001, "query_id": "01f1c6ad-cd28-1465-b7dc-43c8c6052dcd"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_fact_trade_status", "phase": "TRANSFORM", "batch": 1, "ok": true, "seconds": 16.414189459, "query_id": "01f1c6ad-d025-1283-97bb-af7875d43eea"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_fact_market_merge", "phase": "TRANSFORM", "batch": 1, "ok": true, "seconds": 3.6185714999999874, "query_id": "01f1c6ad-d9ee-1167-8838-a14e5466de90"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_agg_market_52w", "phase": "TRANSFORM", "batch": 1, "ok": true, "seconds": 7.586813249999977, "query_id": "01f1c6ad-dc17-15eb-9791-7bade02aa4d5"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_agg_position", "phase": "TRANSFORM", "batch": 1, "ok": true, "seconds": 16.647790791999995, "query_id": "01f1c6ad-e09d-115f-aec8-589f4b9ad91a"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_customer_current", "batch": 1, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_customer_gaps", "batch": 1, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_account_current", "batch": 1, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_account_gaps", "batch": 1, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_trade_orphans", "batch": 1, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_trade_security", "batch": 1, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_trade_status", "batch": 1, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "CHECK", "batch": 1, "ok": true, "checksums": {"dim_customer": ["1000000.00", "1000000.00", "1000000.00", "1000000.00", "2000920.00"], "dim_account": ["2000000.00", "2000000.00", "500927915.00", "2000000.00"], "dim_security": ["6000.00", "2707643165753.00", "1501421724.00"], "fact_trade": ["20000000.00", "11000469800.00", "2189729605.82", "17999158.00", "1000622.00"], "fact_market": ["7500000.00", "821063030.00", "750024014855.00"], "agg_market_52w": ["7500000.00", "1022502056.15", "625700635.30"], "agg_position": ["17972148.00", "-1980564600.00", "1084023432649.00"]}}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_account", "phase": "INGEST", "batch": 2, "ok": true, "seconds": 2.4853481660000227, "query_id": "01f1c6ad-f367-1de0-af76-575542159dda"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_trade", "phase": "INGEST", "batch": 2, "ok": true, "seconds": 4.6245363750000195, "query_id": "01f1c6ad-f4e2-1c49-9f01-bff7b326a997"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_trade_history", "phase": "INGEST", "batch": 2, "ok": true, "seconds": 4.595660124999995, "query_id": "01f1c6ad-f7a4-155a-abf0-4e87db93148e"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_market", "phase": "INGEST", "batch": 2, "ok": true, "seconds": 2.8636760830000014, "query_id": "01f1c6ad-fa61-1e61-8458-087856ec3f59"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_customer", "phase": "INGEST", "batch": 2, "ok": true, "seconds": 8.096853167000006, "query_id": "01f1c6ad-fc16-17b3-8449-eeec217245e2"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_security", "phase": "INGEST", "batch": 2, "ok": true, "seconds": 3.1730843749999735, "query_id": "01f1c6ae-00ea-128c-8468-42fd8e974012"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 2, "table": "stg_account", "got": 129506, "expected": 129506, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 2, "table": "stg_trade", "got": 1000000, "expected": 1000000, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 2, "table": "stg_trade_history", "got": 3000622, "expected": 3000622, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 2, "table": "stg_market", "got": 434628, "expected": 434628, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 2, "table": "stg_customer", "got": 312538, "expected": 312538, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 2, "table": "stg_security", "got": 124, "expected": 124, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_customer_close", "phase": "TRANSFORM", "batch": 2, "ok": true, "seconds": 5.545957250000015, "query_id": "01f1c6ae-0442-18cd-850c-18032ee1440c"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_customer_insert", "phase": "TRANSFORM", "batch": 2, "ok": true, "seconds": 3.512220333000016, "query_id": "01f1c6ae-0791-15b7-8f47-234ea6abfd7b"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_account_close", "phase": "TRANSFORM", "batch": 2, "ok": true, "seconds": 4.060005667000013, "query_id": "01f1c6ae-09a9-1e83-83b2-5045d7caa85e"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_account_insert", "phase": "TRANSFORM", "batch": 2, "ok": true, "seconds": 2.096282042000013, "query_id": "01f1c6ae-0c16-1657-912b-c86f8be8e48c"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_security_merge", "phase": "TRANSFORM", "batch": 2, "ok": true, "seconds": 2.7272748329999956, "query_id": "01f1c6ae-0d56-1fe9-80cd-aca53c099d21"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_fact_trade_insert", "phase": "TRANSFORM", "batch": 2, "ok": true, "seconds": 3.349668916000013, "query_id": "01f1c6ae-0ef9-1201-8ab0-393b58ed157b"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_fact_trade_status", "phase": "TRANSFORM", "batch": 2, "ok": true, "seconds": 8.037927374999981, "query_id": "01f1c6ae-10f6-1c4a-99d0-e3a96ed57f26"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_fact_market_merge", "phase": "TRANSFORM", "batch": 2, "ok": true, "seconds": 3.618282583000024, "query_id": "01f1c6ae-15c1-1c50-82d1-a3e4347121b1"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_agg_market_52w", "phase": "TRANSFORM", "batch": 2, "ok": true, "seconds": 6.271840374999982, "query_id": "01f1c6ae-17eb-1407-b2ab-c2cde1f72fe6"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_agg_position", "phase": "TRANSFORM", "batch": 2, "ok": true, "seconds": 3.9733707080000045, "query_id": "01f1c6ae-1ba9-10f2-ae09-16e7d600bb91"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_customer_current", "batch": 2, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_customer_gaps", "batch": 2, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_account_current", "batch": 2, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_account_gaps", "batch": 2, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_trade_orphans", "batch": 2, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_trade_security", "batch": 2, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_trade_status", "batch": 2, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "CHECK", "batch": 2, "ok": true, "checksums": {"dim_customer": ["1312538.00", "1010000.00", "1615076.00", "1010000.00", "2626400.00"], "dim_account": ["2129506.00", "2239012.00", "533387177.00", "2020000.00"], "dim_security": ["6000.00", "2707643165753.00", "1501421724.00"], "fact_trade": ["21000000.00", "11550563700.00", "2299137694.50", "19699518.00", "49577.00"], "fact_market": ["7860000.00", "860446241.74", "786018277735.00"], "agg_market_52w": ["7860000.00", "1072511566.76", "654816356.68"], "agg_position": ["19667151.00", "-2167734900.00", "1186341992299.00"]}}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_account", "phase": "INGEST", "batch": 3, "ok": true, "seconds": 3.119830583999999, "query_id": "01f1c6ae-2312-1693-bec4-853796d26087"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_trade", "phase": "INGEST", "batch": 3, "ok": true, "seconds": 3.4864360409999904, "query_id": "01f1c6ae-24ee-184e-ae0d-90303a1fd785"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_trade_history", "phase": "INGEST", "batch": 3, "ok": true, "seconds": 3.4839500409999857, "query_id": "01f1c6ae-2702-1f1d-b479-cf8355cae328"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_market", "phase": "INGEST", "batch": 3, "ok": true, "seconds": 2.537425583000015, "query_id": "01f1c6ae-2916-1e8c-be89-fea41e5766a7"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_customer", "phase": "INGEST", "batch": 3, "ok": true, "seconds": 6.049226625000017, "query_id": "01f1c6ae-2a99-1aff-93b8-ef528c3d2413"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "ingest_stg_security", "phase": "INGEST", "batch": 3, "ok": true, "seconds": 2.083180041999981, "query_id": "01f1c6ae-2e38-185b-b3d5-3cc40f4d04c3"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 3, "table": "stg_account", "got": 129298, "expected": 129298, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 3, "table": "stg_trade", "got": 1000000, "expected": 1000000, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 3, "table": "stg_trade_history", "got": 2049577, "expected": 2049577, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 3, "table": "stg_market", "got": 435536, "expected": 435536, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 3, "table": "stg_customer", "got": 314675, "expected": 314675, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "RECONCILE", "batch": 3, "table": "stg_security", "got": 131, "expected": 131, "ok": true}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_customer_close", "phase": "TRANSFORM", "batch": 3, "ok": true, "seconds": 4.575707541999975, "query_id": "01f1c6ae-30dc-11d5-8cdd-e297590b8dd1"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_customer_insert", "phase": "TRANSFORM", "batch": 3, "ok": true, "seconds": 2.0427375830000187, "query_id": "01f1c6ae-3396-1c18-af7e-3577381d3077"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_account_close", "phase": "TRANSFORM", "batch": 3, "ok": true, "seconds": 3.637139208000008, "query_id": "01f1c6ae-34cf-1013-bc2f-1c9586476fe1"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_account_insert", "phase": "TRANSFORM", "batch": 3, "ok": true, "seconds": 1.8986518750000414, "query_id": "01f1c6ae-36f9-1df8-a755-7debfac8bd69"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_security_merge", "phase": "TRANSFORM", "batch": 3, "ok": true, "seconds": 3.033763125000007, "query_id": "01f1c6ae-381c-1a54-88bc-afcee3dec502"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_fact_trade_insert", "phase": "TRANSFORM", "batch": 3, "ok": true, "seconds": 3.005119250000007, "query_id": "01f1c6ae-39ed-13de-b6f4-00c734e768e7"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_fact_trade_status", "phase": "TRANSFORM", "batch": 3, "ok": true, "seconds": 5.918731958999956, "query_id": "01f1c6ae-3bb8-1396-9dfd-c81c5c29e5a2"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_fact_market_merge", "phase": "TRANSFORM", "batch": 3, "ok": true, "seconds": 3.73713137499999, "query_id": "01f1c6ae-3f3e-19ed-9677-0d42421fde04"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_agg_market_52w", "phase": "TRANSFORM", "batch": 3, "ok": true, "seconds": 6.1535173749999785, "query_id": "01f1c6ae-4179-14ea-83e5-6c00ea0527cd"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "t_agg_position", "phase": "TRANSFORM", "batch": 3, "ok": true, "seconds": 3.7962112909999632, "query_id": "01f1c6ae-4525-151f-9eee-338e8f58b2ce"}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_customer_current", "batch": 3, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_customer_gaps", "batch": 3, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_account_current", "batch": 3, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_account_gaps", "batch": 3, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_trade_orphans", "batch": 3, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_trade_security", "batch": 3, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "AUDIT", "name": "audit_trade_status", "batch": 3, "violations": 0}
+{"option": "D2", "engine": "databricks", "sf": "10", "step": "CHECK", "batch": 3, "ok": true, "checksums": {"dim_customer": ["1627213.00", "1020000.00", "2324786.00", "1020000.00", "3255889.00"], "dim_account": ["2258804.00", "2483156.00", "565791066.00", "2040000.00"], "dim_security": ["6000.00", "2707643165753.00", "1501421724.00"], "fact_trade": ["22000000.00", "12100502800.00", "2408322768.47", "20638828.00", "50226.00"], "fact_market": ["8220000.00", "899747974.61", "822024945450.00"], "agg_market_52w": ["8220000.00", "1122520215.26", "683931953.02"], "agg_position": ["20603249.00", "-2271073300.00", "1242746922121.00"]}}

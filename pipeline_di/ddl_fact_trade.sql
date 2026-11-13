@@ -1,0 +1,1 @@
+CREATE TABLE {OUT}.fact_trade (trade_id BIGINT, account_sk BIGINT, customer_sk BIGINT, account_id BIGINT, symbol VARCHAR, trade_type VARCHAR, status VARCHAR, quantity INT, bid_price DECIMAL(10,2), trade_price DECIMAL(10,2), fee DECIMAL(10,2), commission DECIMAL(12,2), tax DECIMAL(12,2), trade_ts TIMESTAMP, trade_date DATE, batch INT)

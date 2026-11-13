@@ -1,0 +1,8 @@
+run 362945624034457 effective_performance_target: STANDARD | state: SUCCESS
+D1 1 t1_wide 25.922969875000035
+D1 1 t2_daily 6.768617376999998
+D1 1 t3_cust360 7.977365058999965
+D1 1 t4a_changes 4.370600050000007
+D1 1 t4b_merge 9.05569773600007
+D1 1 t5_window 8.24883008200004
+wrote results/pipeline-D1-sf10-20261109180115.jsonl

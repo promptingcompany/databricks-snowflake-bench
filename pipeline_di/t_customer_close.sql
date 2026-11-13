@@ -1,0 +1,1 @@
+MERGE INTO {OUT}.dim_customer d USING (SELECT customer_id, effective_ts FROM {OUT}.stg_customer WHERE action IN ('UPDATE', 'DELETE')) s ON d.customer_id = s.customer_id AND d.is_current = TRUE WHEN MATCHED THEN UPDATE SET end_ts = s.effective_ts, is_current = FALSE

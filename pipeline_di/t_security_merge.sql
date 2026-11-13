@@ -1,0 +1,3 @@
+MERGE INTO {OUT}.dim_security d USING {OUT}.stg_security s ON d.symbol = s.symbol
+WHEN MATCHED THEN UPDATE SET issue = s.issue, status = s.status, name = s.name, exchange = s.exchange, shares = s.shares, first_trade_date = s.first_trade_date, dividend_cents = s.dividend_cents, company = s.company, industry_id = s.industry_id, rating = s.rating
+WHEN NOT MATCHED THEN INSERT (symbol, issue, status, name, exchange, shares, first_trade_date, dividend_cents, company, industry_id, rating) VALUES (s.symbol, s.issue, s.status, s.name, s.exchange, s.shares, s.first_trade_date, s.dividend_cents, s.company, s.industry_id, s.rating)

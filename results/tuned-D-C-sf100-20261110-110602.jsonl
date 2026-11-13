@@ -1,0 +1,49 @@
+{"variant": "D-C", "kind": "build", "sql": "CREATE SCHEMA IF NOT EXISTS bench.tpcds_sf100_c", "ok": true, "seconds": 0.4523201670090202}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.call_center AS SELECT * FROM bench.tpcds_sf100.call_center", "ok": true, "seconds": 14.384899875003612}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.catalog_page AS SELECT * FROM bench.tpcds_sf100.catalog_page", "ok": true, "seconds": 3.844305667007575}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.catalog_returns AS SELECT * FROM bench.tpcds_sf100.catalog_returns", "ok": true, "seconds": 12.489311332989018}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.catalog_sales AS SELECT * FROM bench.tpcds_sf100.catalog_sales", "ok": true, "seconds": 22.35875766701065}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.customer AS SELECT * FROM bench.tpcds_sf100.customer", "ok": true, "seconds": 6.840041707997443}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.customer_address AS SELECT * FROM bench.tpcds_sf100.customer_address", "ok": true, "seconds": 4.447311041993089}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.customer_demographics AS SELECT * FROM bench.tpcds_sf100.customer_demographi", "ok": true, "seconds": 8.571468791982625}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.date_dim AS SELECT * FROM bench.tpcds_sf100.date_dim", "ok": true, "seconds": 5.719060875009745}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.household_demographics AS SELECT * FROM bench.tpcds_sf100.household_demograp", "ok": true, "seconds": 6.403551082999911}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.income_band AS SELECT * FROM bench.tpcds_sf100.income_band", "ok": true, "seconds": 3.5212181670067366}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.inventory AS SELECT * FROM bench.tpcds_sf100.inventory", "ok": true, "seconds": 6.017720875010127}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.item AS SELECT * FROM bench.tpcds_sf100.item", "ok": true, "seconds": 3.814728333003586}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.promotion AS SELECT * FROM bench.tpcds_sf100.promotion", "ok": true, "seconds": 3.0751009170198813}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.reason AS SELECT * FROM bench.tpcds_sf100.reason", "ok": true, "seconds": 3.0538078749959823}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.ship_mode AS SELECT * FROM bench.tpcds_sf100.ship_mode", "ok": true, "seconds": 2.828063166991342}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.store AS SELECT * FROM bench.tpcds_sf100.store", "ok": true, "seconds": 3.5337212920130696}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.store_returns AS SELECT * FROM bench.tpcds_sf100.store_returns", "ok": true, "seconds": 6.64289837499382}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.store_sales AS SELECT * FROM bench.tpcds_sf100.store_sales", "ok": true, "seconds": 14.996776000014506}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.time_dim AS SELECT * FROM bench.tpcds_sf100.time_dim", "ok": true, "seconds": 3.2184704579995014}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.warehouse AS SELECT * FROM bench.tpcds_sf100.warehouse", "ok": true, "seconds": 3.1821804999781307}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.web_page AS SELECT * FROM bench.tpcds_sf100.web_page", "ok": true, "seconds": 3.269939791993238}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.web_returns AS SELECT * FROM bench.tpcds_sf100.web_returns", "ok": true, "seconds": 6.540767584025161}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.web_sales AS SELECT * FROM bench.tpcds_sf100.web_sales", "ok": true, "seconds": 9.051632166025229}
+{"variant": "D-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE bench.tpcds_sf100_c.web_site AS SELECT * FROM bench.tpcds_sf100.web_site", "ok": true, "seconds": 3.149545249994844}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.call_center COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 2.9076894159952644}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.catalog_page COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 1.8910550000146031}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.catalog_returns COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 3.232007959013572}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.catalog_sales COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 6.36898979198304}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.customer COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 5.002449958003126}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.customer_address COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 3.8339840420230757}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.customer_demographics COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 4.184099582984345}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.date_dim COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 1.6403416249959264}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.household_demographics COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 1.447995249996893}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.income_band COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 1.4038231250015087}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.inventory COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 3.0422707090037875}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.item COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 2.0347616669896524}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.promotion COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 1.6187774169957265}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.reason COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 1.5234179589897394}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.ship_mode COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 1.4255195829900913}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.store COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 1.508728582994081}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.store_returns COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 2.6803024580003694}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.store_sales COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 6.549061708006775}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.time_dim COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 1.7057297909923363}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.warehouse COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 1.4658279579889495}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.web_page COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 1.3690076659840997}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.web_returns COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 2.6875389170018025}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.web_sales COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 8.813088082999457}
+{"variant": "D-C", "kind": "build", "sql": "ANALYZE TABLE bench.tpcds_sf100_c.web_site COMPUTE STATISTICS FOR ALL COLUMNS", "ok": true, "seconds": 1.6910606660239864}

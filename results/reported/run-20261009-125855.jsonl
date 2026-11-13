@@ -1,0 +1,9 @@
+{"query": "tpcds_q01", "engine": "snowflake", "round": 0, "cold": true, "ok": true, "seconds": 2.555512083, "query_id": "01c79f0e-0108-e066-0011-9f5e000107f6", "rows": 100}
+{"query": "tpcds_q03", "engine": "snowflake", "round": 0, "cold": true, "ok": true, "seconds": 1.4654384169999997, "query_id": "01c79f0e-0108-e066-0011-9f5e000107fa", "rows": 100}
+{"query": "tpcds_q07", "engine": "snowflake", "round": 0, "cold": true, "ok": true, "seconds": 1.6238413750000005, "query_id": "01c79f0f-0108-e11a-0011-9f5e00019dd2", "rows": 100}
+{"query": "tpcds_q01", "engine": "snowflake", "round": 1, "cold": false, "ok": true, "seconds": 1.0569221669999997, "query_id": "01c79f0f-0108-e127-0011-9f5e0002309a", "rows": 100}
+{"query": "tpcds_q03", "engine": "snowflake", "round": 1, "cold": false, "ok": true, "seconds": 0.6740728750000002, "query_id": "01c79f0f-0108-dc31-0000-00119f5e5565", "rows": 100}
+{"query": "tpcds_q07", "engine": "snowflake", "round": 1, "cold": false, "ok": true, "seconds": 0.6052934170000004, "query_id": "01c79f0f-0108-e066-0011-9f5e000107fe", "rows": 100}
+{"query": "tpcds_q01", "engine": "snowflake", "round": 2, "cold": false, "ok": true, "seconds": 1.5484933749999996, "query_id": "01c79f0f-0108-e11a-0011-9f5e00019dd6", "rows": 100}
+{"query": "tpcds_q03", "engine": "snowflake", "round": 2, "cold": false, "ok": true, "seconds": 0.5671444579999996, "query_id": "01c79f0f-0108-e066-0011-9f5e00010802", "rows": 100}
+{"query": "tpcds_q07", "engine": "snowflake", "round": 2, "cold": false, "ok": true, "seconds": 1.070401833, "query_id": "01c79f0f-0108-e917-0011-9f5e0001f332", "rows": 100}

@@ -1,0 +1,51 @@
+SF 10: 1000000 customers, 2000000 accounts, 20000000 batch-1 trades; wrote 4621.4 MB to data/di/sf10
+di_gen exit 0
+snowflake put batch1 Account.txt
+snowflake put batch1 Calendar.csv
+snowflake put batch1 Customer.json
+snowflake put batch1 DailyMarket.csv
+snowflake put batch1 Industry.csv
+snowflake put batch1 Security.dat
+snowflake put batch1 StatusType.csv
+snowflake put batch1 TaxRate.csv
+snowflake put batch1 Trade.csv
+snowflake put batch1 TradeHistory.csv
+snowflake put batch1 TradeType.csv
+snowflake put batch2 Account.txt
+snowflake put batch2 Customer.json
+snowflake put batch2 DailyMarket.csv
+snowflake put batch2 Security.dat
+snowflake put batch2 Trade.csv
+snowflake put batch2 TradeHistory.csv
+snowflake put batch3 Account.txt
+snowflake put batch3 Customer.json
+snowflake put batch3 DailyMarket.csv
+snowflake put batch3 Security.dat
+snowflake put batch3 Trade.csv
+snowflake put batch3 TradeHistory.csv
+databricks upload batch1/Account.txt
+databricks upload batch1/Calendar.csv
+databricks upload batch1/Customer.json
+databricks upload batch1/DailyMarket.csv
+databricks upload batch1/Industry.csv
+databricks upload batch1/Security.dat
+databricks upload batch1/StatusType.csv
+databricks upload batch1/TaxRate.csv
+databricks upload batch1/Trade.csv
+databricks upload batch1/TradeHistory.csv
+databricks upload batch1/TradeType.csv
+databricks upload batch2/Account.txt
+databricks upload batch2/Customer.json
+databricks upload batch2/DailyMarket.csv
+databricks upload batch2/Security.dat
+databricks upload batch2/Trade.csv
+databricks upload batch2/TradeHistory.csv
+databricks upload batch3/Account.txt
+databricks upload batch3/Customer.json
+databricks upload batch3/DailyMarket.csv
+databricks upload batch3/Security.dat
+databricks upload batch3/Trade.csv
+databricks upload batch3/TradeHistory.csv
+done 23 files
+di_upload exit 0
+DI PREP DONE Tue Nov 10 19:16:16 UTC 2026

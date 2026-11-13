@@ -1,0 +1,12 @@
+{
+  "sf10": {
+    "rate_usd_per_dbu": 0.35,
+    "sku": "PREMIUM_JOBS_SERVERLESS_COMPUTE_US_EAST_OHIO",
+    "source": "system.billing.usage by usage_metadata.job_run_id, checked 2026-10-12",
+    "dbus_by_run": {
+      "1": 0.21665287166666666,
+      "2": 0.21930791833333332,
+      "3": 0.22132030611111114
+    }
+  }
+}

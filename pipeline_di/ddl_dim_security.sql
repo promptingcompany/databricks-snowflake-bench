@@ -1,0 +1,1 @@
+CREATE TABLE {OUT}.dim_security (symbol VARCHAR, issue VARCHAR, status VARCHAR, name VARCHAR, exchange VARCHAR, shares BIGINT, first_trade_date DATE, dividend_cents BIGINT, company VARCHAR, industry_id INT, rating VARCHAR)

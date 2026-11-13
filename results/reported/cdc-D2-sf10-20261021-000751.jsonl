@@ -1,0 +1,2 @@
+{"option": "D2", "engine": "databricks", "scale": "10", "step": "BASE_T1", "ok": true, "seconds": 7.4012491250000005, "query_id": "01f1cd1e-23b6-18fb-8d92-9be071c3a105"}
+{"option": "D2", "engine": "databricks", "scale": "10", "step": "BASE_T2", "ok": false, "error": "Error during request to server. Retry request would exceed Retry policy max retry duration of 900.0 seconds"}

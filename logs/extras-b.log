@@ -1,0 +1,143 @@
+tuned builds done Tue Nov 10 19:15:58 UTC 2026
+results/tuned-D-A-sf100-20261110-110602.jsonl:0
+results/tuned-D-C-sf100-20261110-110602.jsonl:0
+results/tuned-S-A-sf100-20261110-110602.jsonl:0
+results/tuned-S-C-sf100-20261110-110602.jsonl:0
+di prep done
+S1 di sf10: waiting until 2026-11-10T20:01:00+00:00 UTC
+D2 di sf10: waiting until 2026-11-10T20:01:00+00:00 UTC
+S2 di sf10: waiting until 2026-11-10T20:01:00+00:00 UTC
+D1 run 1 job_run_id 42566240731368 mode STANDARD ok True
+D1 run 2 job_run_id 1097559292383284 mode STANDARD ok True
+D1 run 3 job_run_id 161862275469079 mode STANDARD ok True
+wrote results/di-D1-sf10-20261110111628.jsonl
+S2 run 1/3 exit 0 -> results/di-S2-sf10-20261110-120106.jsonl
+S1 run 1/3 exit 0 -> results/di-S1-sf10-20261110-120106.jsonl
+D2 run 1/3 exit 0 -> results/di-D2-sf10-20261110-120103.jsonl
+S2 run 2/3 exit 0 -> results/di-S2-sf10-20261110-120455.jsonl
+S1 run 2/3 exit 0 -> results/di-S1-sf10-20261110-120519.jsonl
+D2 run 2/3 exit 0 -> results/di-D2-sf10-20261110-120642.jsonl
+S2 run 3/3 exit 0 -> results/di-S2-sf10-20261110-120851.jsonl
+S1 run 3/3 exit 0 -> results/di-S1-sf10-20261110-120933.jsonl
+S2 window 2026-11-10T20:01:06.009871+00:00 -> 2026-11-10T20:13:54.898921+00:00 exits [0, 0, 0] walls [3.8, 3.9, 3.9] valid=True
+S1 window 2026-11-10T20:01:06.010988+00:00 -> 2026-11-10T20:14:53.456268+00:00 exits [0, 0, 0] walls [4.2, 4.2, 4.2] valid=True
+D2 run 3/3 exit 0 -> results/di-D2-sf10-20261110-121101.jsonl
+D2 window 2026-11-10T20:01:03.590814+00:00 -> 2026-11-10T20:16:46.004256+00:00 exits [0, 0, 0] walls [5.6, 4.3, 4.2] valid=True
+di block exit 0
+D2 pipeline sf100: waiting until 2026-11-10T21:01:00+00:00 UTC
+S1 pipeline sf100: waiting until 2026-11-10T21:01:00+00:00 UTC
+S2 pipeline sf100: waiting until 2026-11-10T21:01:00+00:00 UTC
+run 1051234962045100 effective_performance_target: STANDARD | state: SUCCESS
+D1 1 t1_wide 97.40685871199997
+D1 1 t2_daily 11.215140313000006
+D1 1 t3_cust360 17.97479278200001
+D1 1 t4a_changes 5.849129025000025
+D1 1 t4b_merge 23.032578478999994
+D1 1 t5_window 26.39119275400003
+run 395380178362659 effective_performance_target: STANDARD | state: SUCCESS
+D1 2 t1_wide 83.10584571600003
+D1 2 t2_daily 10.653566881000017
+D1 2 t3_cust360 17.713102146999972
+D1 2 t4a_changes 5.312940197999978
+D1 2 t4b_merge 21.527270813999962
+D1 2 t5_window 23.865196201000003
+run 369745364047045 effective_performance_target: STANDARD | state: SUCCESS
+D1 3 t1_wide 93.85205138100002
+D1 3 t2_daily 10.617816107999943
+D1 3 t3_cust360 17.157097723999982
+D1 3 t4a_changes 5.416726221999966
+D1 3 t4b_merge 22.02902944999994
+D1 3 t5_window 24.629220074000045
+wrote results/pipeline-D1-sf100-20261110121646.jsonl
+S2 run 1/3 exit 0 -> results/pipeline-S2-sf100-20261110-130108.jsonl
+S1 run 1/3 exit 0 -> results/pipeline-S1-sf100-20261110-130108.jsonl
+D2 run 1/3 exit 0 -> results/pipeline-D2-sf100-20261110-130104.jsonl
+S2 run 2/3 exit 0 -> results/pipeline-S2-sf100-20261110-130203.jsonl
+S1 run 2/3 exit 0 -> results/pipeline-S1-sf100-20261110-130214.jsonl
+S2 run 3/3 exit 0 -> results/pipeline-S2-sf100-20261110-130248.jsonl
+D2 run 2/3 exit 0 -> results/pipeline-D2-sf100-20261110-130245.jsonl
+S1 run 3/3 exit 0 -> results/pipeline-S1-sf100-20261110-130313.jsonl
+D2 run 3/3 exit 0 -> results/pipeline-D2-sf100-20261110-130340.jsonl
+S2 window 2026-11-10T21:01:08.790326+00:00 -> 2026-11-10T21:04:38.865270+00:00 exits [0, 0, 0] walls [0.9, 0.7, 0.7] valid=True
+S1 window 2026-11-10T21:01:08.788718+00:00 -> 2026-11-10T21:05:17.762060+00:00 exits [0, 0, 0] walls [1.1, 1.0, 1.0] valid=True
+D2 window 2026-11-10T21:01:04.693274+00:00 -> 2026-11-10T21:06:09.922289+00:00 exits [0, 0, 0] walls [1.7, 0.9, 0.9] valid=True
+pipeline_A block exit 0
+S2 cdc sf100: waiting until 2026-11-10T22:01:00+00:00 UTC
+D2 cdc sf100: waiting until 2026-11-10T22:01:00+00:00 UTC
+S1 cdc sf100: waiting until 2026-11-10T22:01:00+00:00 UTC
+D1 run 1 job_run_id 950079181656837 mode STANDARD ok True
+D1 run 2 job_run_id 809090030431921 mode STANDARD ok True
+D1 run 3 job_run_id 442068514501176 mode STANDARD ok True
+wrote results/cdc-D1-sf100-20261110130610.jsonl
+S2 run 1/3 exit 0 -> results/cdc-S2-sf100-20261110-140108.jsonl
+S1 run 1/3 exit 0 -> results/cdc-S1-sf100-20261110-140108.jsonl
+S2 run 2/3 exit 0 -> results/cdc-S2-sf100-20261110-140252.jsonl
+D2 run 1/3 exit 0 -> results/cdc-D2-sf100-20261110-140104.jsonl
+S1 run 2/3 exit 0 -> results/cdc-S1-sf100-20261110-140305.jsonl
+S2 run 3/3 exit 0 -> results/cdc-S2-sf100-20261110-140438.jsonl
+S1 run 3/3 exit 0 -> results/cdc-S1-sf100-20261110-140507.jsonl
+S2 window 2026-11-10T22:01:08.577450+00:00 -> 2026-11-10T22:07:32.247925+00:00 exits [0, 0, 0] walls [1.7, 1.8, 1.8] valid=True
+D2 run 2/3 exit 0 -> results/cdc-D2-sf100-20261110-140455.jsonl
+S1 window 2026-11-10T22:01:08.577552+00:00 -> 2026-11-10T22:08:13.423337+00:00 exits [0, 0, 0] walls [1.9, 2.0, 2.0] valid=True
+D2 run 3/3 exit 0 -> results/cdc-D2-sf100-20261110-140736.jsonl
+D2 window 2026-11-10T22:01:04.542244+00:00 -> 2026-11-10T22:11:57.306848+00:00 exits [0, 0, 0] walls [3.8, 2.7, 2.6] valid=True
+cdc_A block exit 0
+D2 pipeline sf100: waiting until 2026-11-10T23:01:00+00:00 UTC
+S2 pipeline sf100: waiting until 2026-11-10T23:01:00+00:00 UTC
+S1 pipeline sf100: waiting until 2026-11-10T23:01:00+00:00 UTC
+run 790980890403164 effective_performance_target: STANDARD | state: SUCCESS
+D1 1 t1_wide 84.81738938000001
+D1 1 t2_daily 11.03699795700004
+D1 1 t3_cust360 16.171682549000025
+D1 1 t4a_changes 5.316162425999892
+D1 1 t4b_merge 23.772245331000022
+D1 1 t5_window 26.001864217000048
+run 195236938429799 effective_performance_target: STANDARD | state: SUCCESS
+D1 2 t1_wide 82.26940309400004
+D1 2 t2_daily 11.10316117299999
+D1 2 t3_cust360 16.56533732400004
+D1 2 t4a_changes 5.611949370000048
+D1 2 t4b_merge 21.71059641300002
+D1 2 t5_window 23.710742224000057
+run 872746286264178 effective_performance_target: STANDARD | state: SUCCESS
+D1 3 t1_wide 86.08219039900001
+D1 3 t2_daily 11.28328959999999
+D1 3 t3_cust360 16.500918927000043
+D1 3 t4a_changes 5.881688166999993
+D1 3 t4b_merge 22.95727325500002
+D1 3 t5_window 24.542127355000048
+wrote results/pipeline-D1-sf100-20261110141158.jsonl
+S2 run 1/3 exit 0 -> results/pipeline-S2-sf100-20261110-150105.jsonl
+S1 run 1/3 exit 0 -> results/pipeline-S1-sf100-20261110-150105.jsonl
+S2 run 2/3 exit 0 -> results/pipeline-S2-sf100-20261110-150155.jsonl
+D2 run 1/3 exit 0 -> results/pipeline-D2-sf100-20261110-150101.jsonl
+S2 run 3/3 exit 0 -> results/pipeline-S2-sf100-20261110-150242.jsonl
+S1 run 2/3 exit 0 -> results/pipeline-S1-sf100-20261110-150218.jsonl
+D2 run 2/3 exit 0 -> results/pipeline-D2-sf100-20261110-150251.jsonl
+S1 run 3/3 exit 0 -> results/pipeline-S1-sf100-20261110-150327.jsonl
+S2 window 2026-11-10T23:01:05.727555+00:00 -> 2026-11-10T23:04:33.077987+00:00 exits [0, 0, 0] walls [0.8, 0.8, 0.7] valid=True
+D2 run 3/3 exit 0 -> results/pipeline-D2-sf100-20261110-150348.jsonl
+S1 window 2026-11-10T23:01:05.665928+00:00 -> 2026-11-10T23:05:45.550294+00:00 exits [0, 0, 0] walls [1.2, 1.2, 1.1] valid=True
+D2 window 2026-11-10T23:01:01.175779+00:00 -> 2026-11-10T23:06:19.433765+00:00 exits [0, 0, 0] walls [1.8, 0.9, 0.9] valid=True
+pipeline_C block exit 0
+S2 cdc sf100: waiting until 2026-11-11T00:01:00+00:00 UTC
+D2 cdc sf100: waiting until 2026-11-11T00:01:00+00:00 UTC
+S1 cdc sf100: waiting until 2026-11-11T00:01:00+00:00 UTC
+D1 run 1 job_run_id 339232295773399 mode STANDARD ok True
+D1 run 2 job_run_id 753148360225713 mode STANDARD ok True
+D1 run 3 job_run_id 333457942659308 mode STANDARD ok True
+wrote results/cdc-D1-sf100-20261110150620.jsonl
+S2 run 1/3 exit 0 -> results/cdc-S2-sf100-20261110-160109.jsonl
+D2 run 1/3 exit 0 -> results/cdc-D2-sf100-20261110-160105.jsonl
+S1 run 1/3 exit 0 -> results/cdc-S1-sf100-20261110-160109.jsonl
+S2 run 2/3 exit 0 -> results/cdc-S2-sf100-20261110-160415.jsonl
+D2 run 2/3 exit 0 -> results/cdc-D2-sf100-20261110-160446.jsonl
+D2 run 3/3 exit 0 -> results/cdc-D2-sf100-20261110-160729.jsonl
+S1 run 2/3 exit 0 -> results/cdc-S1-sf100-20261110-160537.jsonl
+S2 run 3/3 exit 0 -> results/cdc-S2-sf100-20261110-160724.jsonl
+D2 window 2026-11-11T00:01:05.153388+00:00 -> 2026-11-11T00:11:31.408616+00:00 exits [0, 0, 0] walls [3.7, 2.7, 2.4] valid=True
+S2 window 2026-11-11T00:01:09.012143+00:00 -> 2026-11-11T00:11:43.362208+00:00 exits [0, 0, 0] walls [3.1, 3.1, 3.2] valid=True
+S1 run 3/3 exit 0 -> results/cdc-S1-sf100-20261110-161006.jsonl
+S1 window 2026-11-11T00:01:09.013616+00:00 -> 2026-11-11T00:15:46.712800+00:00 exits [0, 0, 0] walls [4.5, 4.5, 4.5] valid=True
+cdc_C block exit 0
+EXTRAS B DONE Wed Nov 11 00:15:48 UTC 2026

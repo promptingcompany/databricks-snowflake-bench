@@ -1,0 +1,56 @@
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "BASE_T1", "ok": true, "seconds": 125.14620129100513, "query_id": "01f1de82-f1e3-1383-a218-e6fb03e51d1f"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "BASE_T2", "ok": true, "seconds": 13.166166459035594, "query_id": "01f1de83-3c7c-12d1-a7c3-3534cb6d2129"}
+{"option": "D2", "engine": "databricks", "step": "CHECK", "batch": 0, "ok": true, "checksums": {"t1": ["2879987999.00", "5259716679835.61", "138893943134.00", "4733657758647.21", "526031726151.43"], "t2": ["220704.00", "5259716679835.61", "138893943134.00", "526031726151.43", "2879987999.00"], "t2_matches_t1": true}}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B1_cdc_changes", "batch": 1, "ok": true, "seconds": 19.097456832998432, "query_id": "01f1de83-4625-195f-aebf-4c539e55de1f"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B1_cdc_merge", "batch": 1, "ok": true, "seconds": 16.447300333005842, "query_id": "01f1de83-5187-1f22-b0b7-6c30c3dce577"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B1_cdc_refresh_delete", "batch": 1, "ok": true, "seconds": 2.0237141249817796, "query_id": "01f1de83-5b55-1f9d-9888-a1c7b87bf697"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B1_cdc_refresh_insert", "batch": 1, "ok": true, "seconds": 10.060396582994144, "query_id": "01f1de83-5c8b-1c7a-b1ef-0b607976468e"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B1_cdc_drop", "batch": 1, "ok": true, "seconds": 0.49015695799607784, "query_id": "01f1de83-628a-1184-a035-0e3a8b967002"}
+{"option": "D2", "engine": "databricks", "step": "CHECK", "batch": 1, "ok": true, "checksums": {"t1": ["2880410561.00", "5260764754605.73", "138914754667.00", "4734363784191.12", "526110826741.14"], "t2": ["220704.00", "5260764754605.73", "138914754667.00", "526110826741.14", "2880410561.00"], "t2_matches_t1": true}}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B2_cdc_changes", "batch": 2, "ok": true, "seconds": 14.961306707991753, "query_id": "01f1de83-644a-11ad-b426-eaec7cbeb9c9"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B2_cdc_merge", "batch": 2, "ok": true, "seconds": 11.4640393339796, "query_id": "01f1de83-6d35-19a3-8f8d-17213674e5e1"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B2_cdc_refresh_delete", "batch": 2, "ok": true, "seconds": 1.882112874998711, "query_id": "01f1de83-740b-1953-9bab-f01f5782f24f"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B2_cdc_refresh_insert", "batch": 2, "ok": true, "seconds": 10.112340458028484, "query_id": "01f1de83-752a-1627-b8b9-e3d248cf63b1"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B2_cdc_drop", "batch": 2, "ok": true, "seconds": 0.4772161250002682, "query_id": "01f1de83-7b32-15fb-ab97-7a80c12e7b9a"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B3_cdc_changes", "batch": 3, "ok": true, "seconds": 15.626890124985948, "query_id": "01f1de83-7b7b-1dba-a4cf-022aeb91e799"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B3_cdc_merge", "batch": 3, "ok": true, "seconds": 12.56973254098557, "query_id": "01f1de83-84cd-1628-a4b9-1a9fe59df566"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B3_cdc_refresh_delete", "batch": 3, "ok": true, "seconds": 2.162303041026462, "query_id": "01f1de83-8c4d-174e-b07f-d878debd2573"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B3_cdc_refresh_insert", "batch": 3, "ok": true, "seconds": 10.16154841700336, "query_id": "01f1de83-8d95-11d5-b6d5-7ef3007a20db"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B3_cdc_drop", "batch": 3, "ok": true, "seconds": 0.41136583301704377, "query_id": "01f1de83-93a3-1fac-9264-04f7571db76e"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B4_cdc_changes", "batch": 4, "ok": true, "seconds": 14.964315833, "query_id": "01f1de83-93e4-11b2-952b-860d7221e0a4"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B4_cdc_merge", "batch": 4, "ok": true, "seconds": 11.98246674996335, "query_id": "01f1de83-9cd0-1222-990e-2f7a7440654b"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B4_cdc_refresh_delete", "batch": 4, "ok": true, "seconds": 2.124571125023067, "query_id": "01f1de83-a3f4-12c1-ac06-050b2482e4f1"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B4_cdc_refresh_insert", "batch": 4, "ok": true, "seconds": 9.886601291014813, "query_id": "01f1de83-a538-1ebd-bd37-bad5f2edfd6c"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B4_cdc_drop", "batch": 4, "ok": true, "seconds": 0.3928982919896953, "query_id": "01f1de83-ab1e-11bc-a6a9-ad2f7852da09"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B5_cdc_changes", "batch": 5, "ok": true, "seconds": 15.08132504101377, "query_id": "01f1de83-ab5a-1f98-8935-e6c94dfe08b4"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B5_cdc_merge", "batch": 5, "ok": true, "seconds": 13.606283625005744, "query_id": "01f1de83-b458-1f9d-8751-23eb5b433ef7"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B5_cdc_refresh_delete", "batch": 5, "ok": true, "seconds": 2.070117667026352, "query_id": "01f1de83-bc74-1cb6-a763-ad2ce3af2ee6"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B5_cdc_refresh_insert", "batch": 5, "ok": true, "seconds": 10.129142666002735, "query_id": "01f1de83-bdb2-1836-876d-73d4e5f4ca77"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B5_cdc_drop", "batch": 5, "ok": true, "seconds": 0.4422592080081813, "query_id": "01f1de83-c3bb-14ef-809b-a826c703eaaa"}
+{"option": "D2", "engine": "databricks", "step": "CHECK", "batch": 5, "ok": true, "checksums": {"t1": ["2881967561.00", "5264639967746.45", "138991525955.00", "4736982510462.57", "526400639103.35"], "t2": ["220704.00", "5264639967746.45", "138991525955.00", "526400639103.35", "2881967561.00"], "t2_matches_t1": true}}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B6_cdc_changes", "batch": 6, "ok": true, "seconds": 14.852044833009131, "query_id": "01f1de83-c57c-12ae-ac6b-ddf3d1e9069a"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B6_cdc_merge", "batch": 6, "ok": true, "seconds": 12.703619958017953, "query_id": "01f1de83-ce56-125f-b709-94118bc33dc9"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B6_cdc_refresh_delete", "batch": 6, "ok": true, "seconds": 1.821925874974113, "query_id": "01f1de83-d5e9-1203-a25f-06de0049a11c"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B6_cdc_refresh_insert", "batch": 6, "ok": true, "seconds": 10.045370874984656, "query_id": "01f1de83-d700-1af8-989b-0d92ed9181c8"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B6_cdc_drop", "batch": 6, "ok": true, "seconds": 0.37977499997941777, "query_id": "01f1de83-dcfb-1f9c-8c3d-3900a688cc3c"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B7_cdc_changes", "batch": 7, "ok": true, "seconds": 15.031699375016615, "query_id": "01f1de83-dd36-1aed-bb4b-fc4a9c63244e"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B7_cdc_merge", "batch": 7, "ok": true, "seconds": 14.075249209010508, "query_id": "01f1de83-e62d-15b6-a412-e79327233594"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B7_cdc_refresh_delete", "batch": 7, "ok": true, "seconds": 1.9212675830349326, "query_id": "01f1de83-ee92-10d2-8c12-61711847760d"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B7_cdc_refresh_insert", "batch": 7, "ok": true, "seconds": 9.960247375012841, "query_id": "01f1de83-efb7-136e-8136-1862e1aeb676"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B7_cdc_drop", "batch": 7, "ok": true, "seconds": 0.4141388339921832, "query_id": "01f1de83-f5a7-1a7e-944d-280b9050d597"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B8_cdc_changes", "batch": 8, "ok": true, "seconds": 16.07600541698048, "query_id": "01f1de83-f5e7-1c63-907f-343afb5a64f8"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B8_cdc_merge", "batch": 8, "ok": true, "seconds": 14.0118344159564, "query_id": "01f1de83-ff7c-1ac5-90c4-7c681edf2b9b"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B8_cdc_refresh_delete", "batch": 8, "ok": true, "seconds": 1.8700446670409292, "query_id": "01f1de84-07d7-194a-8a89-e54d774a878c"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B8_cdc_refresh_insert", "batch": 8, "ok": true, "seconds": 10.05156612501014, "query_id": "01f1de84-08f6-1716-a476-908209de5c4f"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B8_cdc_drop", "batch": 8, "ok": true, "seconds": 0.36560487502720207, "query_id": "01f1de84-0ef3-10ce-9b6e-c11171c57cc7"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B9_cdc_changes", "batch": 9, "ok": true, "seconds": 15.67948637495283, "query_id": "01f1de84-0f2c-1176-b367-6de755921c22"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B9_cdc_merge", "batch": 9, "ok": true, "seconds": 15.994564625027124, "query_id": "01f1de84-1884-1d08-9221-537edc54fa1b"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B9_cdc_refresh_delete", "batch": 9, "ok": true, "seconds": 1.9441882080282085, "query_id": "01f1de84-220e-137b-afd3-e2a0ec6943fa"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B9_cdc_refresh_insert", "batch": 9, "ok": true, "seconds": 10.16586287500104, "query_id": "01f1de84-2337-116d-8070-ad58f9a40b21"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B9_cdc_drop", "batch": 9, "ok": true, "seconds": 0.3734985000337474, "query_id": "01f1de84-2946-1f18-9a57-12405de717b2"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B10_cdc_changes", "batch": 10, "ok": true, "seconds": 15.753963999974076, "query_id": "01f1de84-2980-15c0-9e1a-b539667ed2b8"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B10_cdc_merge", "batch": 10, "ok": true, "seconds": 13.783265458012465, "query_id": "01f1de84-32e4-166f-bae1-55fe481c0cab"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B10_cdc_refresh_delete", "batch": 10, "ok": true, "seconds": 2.0056413750280626, "query_id": "01f1de84-3b1c-139a-9ee5-4e6a1af35cb3"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B10_cdc_refresh_insert", "batch": 10, "ok": true, "seconds": 9.930522291047964, "query_id": "01f1de84-3c4e-1611-beba-a47df3aab31f"}
+{"option": "D2", "engine": "databricks", "scale": "1000", "step": "B10_cdc_drop", "batch": 10, "ok": true, "seconds": 0.3364706659922376, "query_id": "01f1de84-423a-1328-b0b9-081dc1362a95"}
+{"option": "D2", "engine": "databricks", "step": "CHECK", "batch": 10, "ok": true, "checksums": {"t1": ["2885359170.00", "5273081534975.76", "139158673761.00", "4742680443395.73", "527032080383.03"], "t2": ["220704.00", "5273081534975.76", "139158673761.00", "527032080383.03", "2885359170.00"], "t2_matches_t1": true}}

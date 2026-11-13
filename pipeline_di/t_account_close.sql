@@ -1,0 +1,1 @@
+MERGE INTO {OUT}.dim_account d USING (SELECT account_id, effective_ts FROM {OUT}.stg_account WHERE action IN ('UPDATE', 'DELETE')) s ON d.account_id = s.account_id AND d.is_current = TRUE WHEN MATCHED THEN UPDATE SET end_ts = s.effective_ts, is_current = FALSE

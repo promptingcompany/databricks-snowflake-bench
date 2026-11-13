@@ -1,0 +1,25 @@
+{"variant": "S-C", "kind": "build", "sql": "CREATE SCHEMA IF NOT EXISTS BENCH.TPCDS_SF100_C", "ok": true, "seconds": 0.17634095801622607}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.call_center AS SELECT * FROM BENCH.TPCDS_SF100.call_center", "ok": true, "seconds": 5.019638166006189}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.catalog_page AS SELECT * FROM BENCH.TPCDS_SF100.catalog_page", "ok": true, "seconds": 1.5155162090086378}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.catalog_returns AS SELECT * FROM BENCH.TPCDS_SF100.catalog_returns", "ok": true, "seconds": 5.745359042019118}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.catalog_sales AS SELECT * FROM BENCH.TPCDS_SF100.catalog_sales", "ok": true, "seconds": 28.270926958008204}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.customer AS SELECT * FROM BENCH.TPCDS_SF100.customer", "ok": true, "seconds": 2.043447958974866}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.customer_address AS SELECT * FROM BENCH.TPCDS_SF100.customer_address", "ok": true, "seconds": 2.548765541985631}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.customer_demographics AS SELECT * FROM BENCH.TPCDS_SF100.customer_demographi", "ok": true, "seconds": 1.6873026250104886}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.date_dim AS SELECT * FROM BENCH.TPCDS_SF100.date_dim", "ok": true, "seconds": 1.398149833024945}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.household_demographics AS SELECT * FROM BENCH.TPCDS_SF100.household_demograp", "ok": true, "seconds": 1.1620753750030417}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.income_band AS SELECT * FROM BENCH.TPCDS_SF100.income_band", "ok": true, "seconds": 1.447004250017926}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.inventory AS SELECT * FROM BENCH.TPCDS_SF100.inventory", "ok": true, "seconds": 5.664004999998724}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.item AS SELECT * FROM BENCH.TPCDS_SF100.item", "ok": true, "seconds": 3.7826902909728233}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.promotion AS SELECT * FROM BENCH.TPCDS_SF100.promotion", "ok": true, "seconds": 1.1557292089855764}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.reason AS SELECT * FROM BENCH.TPCDS_SF100.reason", "ok": true, "seconds": 1.4524976660031825}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.ship_mode AS SELECT * FROM BENCH.TPCDS_SF100.ship_mode", "ok": true, "seconds": 1.1015563340042718}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.store AS SELECT * FROM BENCH.TPCDS_SF100.store", "ok": true, "seconds": 1.257271792012034}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.store_returns AS SELECT * FROM BENCH.TPCDS_SF100.store_returns", "ok": true, "seconds": 8.518133999983547}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.store_sales AS SELECT * FROM BENCH.TPCDS_SF100.store_sales", "ok": true, "seconds": 28.098312792018987}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.time_dim AS SELECT * FROM BENCH.TPCDS_SF100.time_dim", "ok": true, "seconds": 1.533057958993595}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.warehouse AS SELECT * FROM BENCH.TPCDS_SF100.warehouse", "ok": true, "seconds": 1.8313073749886826}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.web_page AS SELECT * FROM BENCH.TPCDS_SF100.web_page", "ok": true, "seconds": 1.1230472910101525}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.web_returns AS SELECT * FROM BENCH.TPCDS_SF100.web_returns", "ok": true, "seconds": 3.224322416994255}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.web_sales AS SELECT * FROM BENCH.TPCDS_SF100.web_sales", "ok": true, "seconds": 16.667085458000656}
+{"variant": "S-C", "kind": "build", "sql": "CREATE OR REPLACE TABLE BENCH.TPCDS_SF100_C.web_site AS SELECT * FROM BENCH.TPCDS_SF100.web_site", "ok": true, "seconds": 1.4994330409972463}

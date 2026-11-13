@@ -1,0 +1,21 @@
+# Settings used for the runs. Credentials go in .env (see .env.example), never here.
+suite: tpcds            # queries/tpcds_qNN.sql (DuckDB dialect, translated per engine with sqlglot)
+scale_factor: 10       # 10 and 100 were run; set the matching schema names below
+rounds: 3               # measured warm rounds per query (round 0 is a cold run)
+timeout_s: 600
+query_subset: []        # e.g. [1,3,7]; empty = all 99
+databricks:
+  catalog: bench
+  schema: tpcds_sf10
+  warehouse_size: Medium   # serverless SQL warehouse, 1 cluster
+  dbu_per_hour: 24
+  usd_per_dbu: 0.70        # read from system.billing.list_prices, serverless SQL, us-east-2, on 2026-10-09
+snowflake:
+  database: BENCH
+  schema: TPCDS_SF10
+  warehouse_size: Medium   # a Large warehouse (8 credits/hour) was added as the price-matched comparison
+  credits_per_hour: 4
+  stage: BENCH.TPCDS_SF10.TPCDS_STAGE   # external stage over data.uri
+  usd_per_credit: 3.00     # Enterprise edition, AWS us-east-2 on-demand
+data:
+  uri: s3://<your-bucket>/tpcds/sf100   # only used by the optional S3 route; the reported runs loaded from local files (bench.load --local)

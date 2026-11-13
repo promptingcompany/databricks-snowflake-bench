@@ -1,0 +1,12 @@
+{
+  "scale": "1000",
+  "date": "2026-11-12",
+  "source": "results/sf1000-costs-raw.json (billing tables, list prices, Databricks us-west-2 Premium, Snowflake us-east-2 Enterprise; Snowflake $3/credit, D1 $0.35/DBU, D2 $0.70/DBU)",
+  "all_windows_clean": true,
+  "outputs_match_across_platforms": true,
+  "cost_per_run_usd": {
+    "transformation": {"D1": 1.254, "D2": 1.194, "S1": 1.845, "S2": 2.151},
+    "incremental_update": {"D1": 2.915, "D2": 3.015, "S1": 7.391, "S2": 7.722}
+  },
+  "D1_runs_usd": {"transformation": [1.2514, 1.2355, 1.2759], "incremental_update": [2.8964, 2.9009, 2.9471]}
+}

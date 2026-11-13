@@ -1,0 +1,1 @@
+CREATE TABLE {OUT}.dim_account (account_sk BIGINT, account_id BIGINT, version INT, customer_id BIGINT, customer_sk BIGINT, account_name VARCHAR, tax_status INT, status VARCHAR, broker_id INT, effective_ts TIMESTAMP, end_ts TIMESTAMP, is_current BOOLEAN)
