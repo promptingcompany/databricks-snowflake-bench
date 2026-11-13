@@ -138,6 +138,8 @@ $3 per Snowflake credit). Snowflake cost counts compute credits only; cloud serv
 | `results/s1-clean-reruns.json` | The Snowflake Medium windows rerun because the first window was not clean (`"clean": false`) |
 | `results/*-sf100-*.jsonl`, `results/*-sf1000-*.jsonl` | Raw per-statement logs for each run, with row counts and column sums |
 
+**Check every number.** `python3 scripts/verify_writeup.py` recomputes each cost in the November write-up from the billed units, each time from the run logs, and confirms that all 12 runs in each row produced the same output. It reads only `results/` and needs no accounts. Output: `results/writeup-verified.json`.
+
 **Check one number.** Transformation at SF 100 on Snowflake Medium: in `results/sf100-costs.json`, the `pipeline` / `S1`
 row shows `billed: 0.3765` credits for the 10:00 to 11:00 UTC hour on 2026-11-10, three runs, no foreign statements.
 0.3765 × $3 ÷ 3 = $0.38 per run. The serverless Jobs rows for the same workload show 0.4172, 0.4151 and 0.4047 DBU,
