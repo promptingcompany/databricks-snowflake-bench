@@ -181,7 +181,7 @@ Raw files are JSON Lines, named `<workload>-<setup>-sf<scale>-<timestamp>.jsonl`
 - Tuned tables at 1 TB. They have run at 100 GB only.
 - A billed run of the 99-query suite. Its 2026-10 timings are in `results/reported/`, but no billing window was recorded for it.
 
-Two checks are still open before this is final: a review of the queries and SQL by an expert on each platform, and a check of both vendors' terms and TPC's fair-use policy on the "TPC-DS-derived" wording.
+Still open before this is final: a review of the queries and SQL by an expert on each platform, and sharing the results with Snowflake ahead of public release, as its Acceptable Use Policy (section IV) requires. The TPC fair-use disclaimer is in the License section.
 
 ## Citation
 
@@ -189,4 +189,6 @@ If you use Databricks Snowflake Bench, please cite it with the "Cite this reposi
 
 ## License
 
-Code, SQL and results are [MIT](LICENSE) licensed. The files in `queries/` are derived from the TPC-DS query templates and remain subject to the TPC's terms. This is not an official or audited TPC-DS result. Built by [The Prompting Company](https://promptingcompany.com).
+Code, SQL and results are [MIT](LICENSE) licensed. The files in `queries/` and the generated data are derived from the TPC-DS kit and remain subject to the TPC's license in [TPC-DS-EULA.txt](TPC-DS-EULA.txt). Built by [The Prompting Company](https://promptingcompany.com).
+
+<sub>The Databricks Snowflake Bench is derived from the TPC-DS Benchmark and as such is not comparable to published TPC-DS results, as the Databricks Snowflake Bench results do not comply with the TPC-DS Specification.</sub>
