@@ -24,8 +24,11 @@ Regions and accounts, per round:
 
 | Round | Databricks | Snowflake |
 |---|---|---|
-| October 2026 | Trial workspace, AWS us-east-2 | Trial account, Enterprise, AWS us-east-2 |
-| November 2026 | Premium workspace, AWS us-west-2 | Enterprise account, AWS us-east-2 |
+| October 2026 (runs 2026-10-12 and 2026-10-21 UTC) | Trial workspace, AWS us-east-2 | Trial account, Enterprise, AWS us-east-2 |
+| November 2026 (runs 2026-11-10 10:01 to 2026-11-12 11:23 UTC) | Premium workspace, AWS us-west-2 | Enterprise account, AWS us-east-2 |
+
+Both platforms are managed services that update without a version bump. Their platform versions were not logged during
+the runs, so the run dates above are the version record.
 
 In November the two platforms ran in different regions. The Parquet files were uploaded to each platform from local disk,
 so no cross-region data transfer was billed. Default settings unless a run is labelled tuned. Both platforms load the same Parquet files, produced once on a laptop and
@@ -86,14 +89,14 @@ Windows that were rejected or discarded are in `results/discarded/`. The report'
 the Snowflake database, schemas, Medium and Large warehouses, key-pair user and grants, and the Databricks catalog, grants,
 billing access and the serverless SQL warehouse. The warehouse itself and its auto-stop are set in the Databricks UI or API.
 
-**2. Credentials.** Copy `env.example` to `.env` (the same content is in the hidden `.env.example`).
+**2. Credentials.** Copy `env.example` to `.env`.
 - Databricks uses a personal access token. Give the host without `https://` and the warehouse HTTP path.
 - **Snowflake uses key-pair login, not a password.** Set `SNOWFLAKE_PRIVATE_KEY_PATH` to an unencrypted PKCS8 PEM key. The commands
   to make the key and register its public half are in `setup/snowflake_setup.sql`.
 
 **3. Install and generate data.**
 ```
-python -m venv .venv && .venv/bin/pip install -r requirements.txt
+python3.13 -m venv .venv && .venv/bin/pip install -r requirements.txt   # runs used Python 3.13.16 (.python-version)
 KIT=/path/to/tpcds-kit SF=10 ./scripts/gen_tpcds.sh          # after building the kit: cd $KIT/tools && make OS=MACOS (or LINUX)
 python scripts/di_gen.py --sf 10 --seed 42                    # ETL workload data (seed 42 is the default)
 ```
@@ -156,3 +159,7 @@ the same rates, which are the list prices shown in the November write-up.
 ## Open before this is final
 Independent review of the queries and SQL by an expert on each platform, and a check of both vendors' terms and TPC's
 fair-use policy on the "TPC-DS-derived" wording.
+
+## License
+Code, SQL and results in this repository are MIT licensed (see `LICENSE`). The files in `queries/` are derived from the
+TPC-DS query templates and remain subject to the TPC's own terms. This is not an official or audited TPC-DS result.
