@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this benchmark, please cite it as below."
-title: "Databricks vs Snowflake: billed cost benchmark"
+title: "Databricks Snowflake Bench: billed cost benchmark"
 type: dataset
 authors:
   - name: "The Prompting Company"
 version: 1.0.0
 date-released: 2026-11-13
-url: "https://github.com/angelafeliciaa/databricks-vs-snowflake-benchmark"
+url: "https://github.com/angelafeliciaa/databricks-snowflake-bench"
 keywords:
   - benchmark
   - databricks
