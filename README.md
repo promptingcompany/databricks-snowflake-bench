@@ -78,7 +78,7 @@ Before you start, have these ready:
 Check every number without an account. This recomputes each cost from the billed units and each time from the run logs, and confirms that every run in a row produced the same output:
 
 ```bash
-git clone https://github.com/angelafeliciaa/databricks-snowflake-bench && cd databricks-snowflake-bench
+git clone https://github.com/promptingcompany/databricks-snowflake-bench && cd databricks-snowflake-bench
 python3 scripts/verify_writeup.py           # writes results/writeup-verified.json
 ```
 

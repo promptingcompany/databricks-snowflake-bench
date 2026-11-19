@@ -6,7 +6,7 @@ authors:
   - name: "The Prompting Company"
 version: 1.0.0
 date-released: 2026-11-13
-url: "https://github.com/angelafeliciaa/databricks-snowflake-bench"
+url: "https://github.com/promptingcompany/databricks-snowflake-bench"
 keywords:
   - benchmark
   - databricks
