@@ -126,7 +126,8 @@ The D1 setup runs through the `*_d1.py` modules with `--submit`.
 
 ## How cost is measured
 
-- **One window per setup.** Each block of three runs starts at the top of an hour from a stopped warehouse, runs alone on it, and waits for auto-stop (1 minute). `bench/isolated_cost.py` runs it, and `bench/isolated_block.py` runs several setups at once.
+- **One window per warehouse setup.** Each D2, S1 and S2 block of three runs starts at the top of an hour from a stopped warehouse, runs alone on it, and waits for auto-stop (1 minute). `bench/isolated_cost.py` runs it, and `bench/isolated_block.py` runs several setups at once.
+- **D1 has no warehouse.** Serverless Jobs bills each job run on its own, so each D1 run's cost is read per job run.
 - **Cost comes from billing tables.** Databricks `system.billing.usage` and Snowflake `WAREHOUSE_METERING_HISTORY`, for every hour the window spans (`bench/isolated_reconcile.py`). That includes start-up, gaps between statements and the idle tail.
 - **A window is rejected** if any other statement ran on the same warehouse, a run exits non-zero or times out, or one run takes more than twice the fastest. Rejected windows are in `results/discarded/`, and the Snowflake Medium windows rerun after a rejection are in `results/s1-clean-reruns.json`.
 - **Outputs must match.** Every run records row counts and column sums. A row counts only if all 12 runs agree.
