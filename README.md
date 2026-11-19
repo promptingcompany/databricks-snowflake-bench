@@ -45,7 +45,7 @@ Three runs per setup, in US dollars at list price. Snowflake counts compute cred
 
 Serverless Jobs (D1) was the cheapest setup in 5 of 6 rows. At 1 TB the SQL warehouse (D2) beat it on transformation by 6 cents. The gap to Snowflake Medium narrowed as data grew: 2.6x at 100 GB and 1.5x at 1 TB on transformation, so do not assume it holds past 1 TB.
 
-All 12 runs in each row produced the same output (same row counts, column sums and result hash).
+All 12 runs in each row produced the same row counts and column sums on every output table.
 
 ### Time per run, same windows
 
