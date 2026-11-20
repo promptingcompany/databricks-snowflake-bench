@@ -23,8 +23,8 @@ Each workload ran on four setups:
 |---|---|---|---|
 | D1 | Databricks | Serverless Jobs, standard performance mode, notebook task | $0.35 per DBU, billed per job run |
 | D2 | Databricks | Serverless SQL warehouse, Medium (24 DBU/h) | $0.70 per DBU |
-| S1 | Snowflake | Enterprise, Medium warehouse (4 credits/h) | $3 per credit |
-| S2 | Snowflake | Enterprise, Large warehouse (8 credits/h), the closest price match to D2 | $3 per credit |
+| S1 | Snowflake | Enterprise, Medium Gen2 warehouse (about 5.4 credits/h, from billing) | $3 per credit |
+| S2 | Snowflake | Enterprise, Large Gen2 warehouse (about 10.8 credits/h, from billing) | $3 per credit |
 
 SQL is written once in DuckDB dialect and translated per platform with sqlglot (`bench/engines.py`). Only the file ingest SQL differs, because parsing is part of what is measured.
 
@@ -181,7 +181,7 @@ Raw files are JSON Lines, named `<workload>-<setup>-sf<scale>-<timestamp>.jsonl`
 - Tuned tables at 1 TB. They have run at 100 GB only.
 - A billed run of the 99-query suite. Its 2026-10 timings are in `results/reported/`, but no billing window was recorded for it.
 
-Still open before this is final: a review of the queries and SQL by an expert on each platform, and sharing the results with Snowflake ahead of public release, as its Acceptable Use Policy (section IV) requires. The TPC fair-use disclaimer is in the License section.
+Still open before this is final: a review of the queries and SQL by an expert on each platform. The TPC fair-use disclaimer is in the License section.
 
 ## Citation
 
