@@ -1,4 +1,4 @@
-"""Part B runner: incremental CDC pipeline (see docs/PHASE3_TUNED_AND_CDC_METHOD.md).
+"""Part B runner: incremental CDC pipeline.
 Usage: python -m bench.cdc --option D2|S1|S2 --scale 10|100 [--batches 10] [--yes] [--print]
 Builds the T1 wide fact and T2 daily rollup once, then applies N batches. Each batch touches a 30-day window of sale dates:
  about 5% of its rows updated, 0.5% deleted, 2% inserted (as new keys), all by one MERGE; then T2 is refreshed for only the

@@ -1,4 +1,4 @@
-"""DI-style ETL runner (docs/PHASE4_DI_STYLE_ETL_METHOD.md). Our own design, NOT TPC-DI.
+"""DI-style ETL runner. Our own design, NOT TPC-DI.
 Usage: python -m bench.di_etl --option D2|S1|S2 --sf 1 [--print] [--yes (needed for sf >= 100)]
 Per batch: ingest (platform-native readers, timed as phase INGEST), transforms (shared SQL, phase TRANSFORM), audits, checkpoint.
 Files must already be uploaded (bench.di_upload). Everything is created in a fresh run schema that is dropped at the end."""

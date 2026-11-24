@@ -9,7 +9,7 @@ databricks:
   schema: tpcds_sf100
   warehouse_size: Medium   # serverless SQL warehouse, 1 cluster
   dbu_per_hour: 24
-  usd_per_dbu: 0.70        # read from system.billing.list_prices, serverless SQL, us-east-2, on 2026-10-09
+  usd_per_dbu: 0.70        # list price, serverless SQL (system.billing.list_prices)
 snowflake:
   database: BENCH
   schema: TPCDS_SF100
