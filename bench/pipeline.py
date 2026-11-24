@@ -1,4 +1,4 @@
-"""Phase 2 runner: batch transformation pipeline (see docs/PHASE2_BATCH_ETL_DESIGN.md).
+"""Phase 2 runner: batch transformation pipeline.
 Usage: python -m bench.pipeline --option D2|S1|S2 --scale 10|100 [--runs 3] [--cold] [--yes] [--print]
  D2 = Databricks serverless SQL warehouse (from .env)   S1 = Snowflake BENCH_M   S2 = Snowflake BENCH_L
  D1 = Databricks serverless Jobs compute: NOT IMPLEMENTED (SQL tasks run on SQL warehouses; D1 needs a

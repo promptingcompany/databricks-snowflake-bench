@@ -1,4 +1,4 @@
-"""Generator for the DI-style ETL benchmark (docs/PHASE4_DI_STYLE_ETL_METHOD.md). Our own design, NOT TPC-DI.
+"""Generator for the DI-style ETL benchmark. Our own design, NOT TPC-DI.
 Usage: python scripts/di_gen.py --sf 1 [--seed 42] [--out data/di]
 Writes data/di/sf<SF>/batch{1,2,3}/... plus di_report.json (row counts, sums, versions) and layout.json (fixed-width spec).
 Deterministic: every value comes from hash(key, salt, seed), never from random state, so a rerun is byte identical.

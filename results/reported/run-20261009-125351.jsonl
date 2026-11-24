@@ -1,9 +1,0 @@
-{"query": "tpcds_q01", "engine": "snowflake", "round": 0, "cold": true, "ok": false, "error": "000904 (42000): SQL compilation error: error line 1 at position 38\ninvalid identifier 'SR_CUSTOMER_SK'"}
-{"query": "tpcds_q03", "engine": "snowflake", "round": 0, "cold": true, "ok": false, "error": "000904 (42000): SQL compilation error: error line 1 at position 7\ninvalid identifier 'DT.D_YEAR'"}
-{"query": "tpcds_q07", "engine": "snowflake", "round": 0, "cold": true, "ok": false, "error": "000904 (42000): SQL compilation error: error line 1 at position 7\ninvalid identifier 'I_ITEM_ID'"}
-{"query": "tpcds_q01", "engine": "snowflake", "round": 1, "cold": false, "ok": false, "error": "000904 (42000): SQL compilation error: error line 1 at position 38\ninvalid identifier 'SR_CUSTOMER_SK'"}
-{"query": "tpcds_q03", "engine": "snowflake", "round": 1, "cold": false, "ok": false, "error": "000904 (42000): SQL compilation error: error line 1 at position 7\ninvalid identifier 'DT.D_YEAR'"}
-{"query": "tpcds_q07", "engine": "snowflake", "round": 1, "cold": false, "ok": false, "error": "000904 (42000): SQL compilation error: error line 1 at position 7\ninvalid identifier 'I_ITEM_ID'"}
-{"query": "tpcds_q01", "engine": "snowflake", "round": 2, "cold": false, "ok": false, "error": "000904 (42000): SQL compilation error: error line 1 at position 38\ninvalid identifier 'SR_CUSTOMER_SK'"}
-{"query": "tpcds_q03", "engine": "snowflake", "round": 2, "cold": false, "ok": false, "error": "000904 (42000): SQL compilation error: error line 1 at position 7\ninvalid identifier 'DT.D_YEAR'"}
-{"query": "tpcds_q07", "engine": "snowflake", "round": 2, "cold": false, "ok": false, "error": "000904 (42000): SQL compilation error: error line 1 at position 7\ninvalid identifier 'I_ITEM_ID'"}

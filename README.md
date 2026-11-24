@@ -1,6 +1,6 @@
 # Databricks Snowflake Bench
 
-[![Workloads](https://img.shields.io/badge/workloads-4-000000?style=for-the-badge)](#workloads)
+[![Workloads](https://img.shields.io/badge/workloads-3-000000?style=for-the-badge)](#workloads)
 [![Data](https://img.shields.io/badge/data-10_GB_to_1_TB-000000?style=for-the-badge)](#results)
 [![License](https://img.shields.io/badge/license-MIT-000000?style=for-the-badge)](LICENSE)
 
@@ -12,7 +12,6 @@ Most warehouse comparisons time queries and multiply by an hourly rate. That mis
 
 | Workload | What runs | Code | Scales run |
 |---|---|---|---|
-| Analytical query suite | 99 TPC-DS-derived queries, 1 cold and 3 warm rounds | `queries/`, `bench/run.py` | 10 GB |
 | Transformation | 6 SQL steps: a wide join, a daily rollup, a customer view, a change set, a merge and a window step | `pipeline/`, `bench/pipeline.py` | 10 GB, 100 GB, 1 TB |
 | Incremental update | Build a change set, merge it into existing tables, then refresh the tables built on them | `pipeline_cdc/`, `bench/cdc.py` | 10 GB, 100 GB, 1 TB |
 | ETL from raw files | Parse raw files, then build dimension and fact tables | `pipeline_di/`, `bench/di_etl.py` | 10 GB |
@@ -61,10 +60,6 @@ Mean seconds per run. D1 shows two numbers: time spent running SQL, and the whol
 | Incremental update, tuned tables | 100 GB | 341 s | 744 s | 167 s | 107 s | 97 s |
 
 D1 was the slowest setup in 5 of 6 rows by whole-job time; Snowflake Medium was slower on incremental update at 1 TB. D1 trades minutes of start-up for a lower rate and per-job billing.
-
-### Query suite timings, 2026-10-12 and 2026-10-21
-
-The first round ran the 99-query suite and every workload at 10 GB on trial accounts. Those timings are in the [October report](https://reports.promptingco.com/databricks/databricks-vs-snowflake/) and the raw files in `results/reported/`. The query suite was not billed.
 
 ## Quickstart
 
@@ -116,7 +111,6 @@ Each run spends real credits on both platforms. Billing rows arrive about 3 hour
 The other workloads:
 
 ```bash
-python -m bench.run                          # query suite, all rounds
 python -m bench.pipeline --option D2 --scale 10 --runs 3
 python -m bench.cdc --option S1 --scale 10
 python -m bench.di_etl --option S2 --sf 10
@@ -131,7 +125,6 @@ The D1 setup runs through the `*_d1.py` modules with `--submit`.
 - **Cost comes from billing tables.** Databricks `system.billing.usage` and Snowflake `WAREHOUSE_METERING_HISTORY`, for every hour the window spans (`bench/isolated_reconcile.py`). That includes start-up, gaps between statements and the idle tail.
 - **A window is rejected** if any other statement ran on the same warehouse, a run exits non-zero or times out, or one run takes more than twice the fastest. Rejected windows are in `results/discarded/`, and the Snowflake Medium windows rerun after a rejection are in `results/s1-clean-reruns.json`.
 - **Outputs must match.** Every run records row counts and column sums. A row counts only if all 12 runs agree.
-- **Query suite time is server-side** execution time from each platform's query history (`bench/enrich.py`), with result caches off on both.
 
 To check one number by hand: transformation at 100 GB on Snowflake Medium billed 0.3765 credits for the 10:00 to 11:00 UTC hour on 2026-11-10, across three runs. 0.3765 × $3 ÷ 3 = $0.38 per run. The serverless Jobs rows for the same workload billed 0.4172, 0.4151 and 0.4047 DBU, one per job run, so × $0.35 = $0.146, $0.145 and $0.142, mean $0.14.
 
@@ -139,7 +132,7 @@ To reproduce the cost numbers you need `SELECT` on `system.billing.usage` and `s
 
 ## How we ran it
 
-- **Two rounds.** 2026-10-12 and 2026-10-21 UTC on trial accounts, both in AWS us-east-2. 2026-11-10 10:01 to 2026-11-12 11:23 UTC on a Databricks Premium workspace in AWS us-west-2 and a Snowflake Enterprise account in AWS us-east-2.
+- **Run window.** 2026-11-10 10:01 to 2026-11-12 11:23 UTC on a Databricks Premium workspace in AWS us-west-2 and a Snowflake Enterprise account in AWS us-east-2.
 - **No cross-region transfer billed.** Both platforms loaded the same Parquet files, produced once on a laptop and uploaded from local disk: into a Snowflake internal stage with `PUT`, and into a Unity Catalog volume on Databricks. (We first tried reading from S3. The Snowflake cross-account role never worked, so no reported run uses S3.)
 - **Default settings.** Plain CTAS (Databricks) or `COPY INTO` (Snowflake), each platform's default statistics step, no clustering or hand tuning. The tuned-tables row comes from a separate track in `bench/tuned.py`.
 - **No version numbers.** Both are managed services that update without a version bump, so the run dates above are the version record.
@@ -150,15 +143,9 @@ Generated with `dsdgen` from the community [tpcds-kit](https://github.com/gregra
 
 `dsdgen` crashes with a segmentation fault if `-dir` is a long path, so the script generates into `/tmp` and moves the files.
 
-An earlier data set was discarded. DuckDB's generator wrote overflow values into one column of `web_sales` (145 rows at 10 GB), so those runs are not in any result. `docs/PHASE3_TUNED_AND_CDC_METHOD.md` describes the track that followed.
-
-### Queries
-
-The 99 query files are identical to the queries bundled with DuckDB's TPC-DS extension, with default substitution values. We did not regenerate them with TPC's `dsqgen`. The suite rotates query order each round, and failed queries count in the denominator.
-
 ### ETL workload
 
-The ETL workload is our own design, modeled on the structure of data integration benchmarks. It is not TPC-DI and not a TPC-DI result. `scripts/di_gen.py` generates its source files deterministically from a seed, with no TPC code. The method is in `docs/PHASE4_DI_STYLE_ETL_METHOD.md`.
+The ETL workload is our own design, modeled on the structure of data integration benchmarks. It is not TPC-DI and not a TPC-DI result. `scripts/di_gen.py` generates its source files deterministically from a seed, with no TPC code.
 
 ## Result files
 
@@ -170,16 +157,13 @@ The ETL workload is our own design, modeled on the structure of data integration
 | `results/extras-costs.json` | Every window from 2026-11-10 to 2026-11-12, including ETL, tuned tables and rejected windows |
 | `results/s1-clean-reruns.json` | Snowflake Medium windows rerun because the first was not clean (`"clean": false`) |
 | `results/*-sf100-*.jsonl`, `results/*-sf1000-*.jsonl` | Per-statement logs for each run, with row counts and column sums |
-| `results/reported/` | The 153 raw files from the October round, also bundled as `results/reported-results.tar.gz` |
-| `results/reported/isolated2-windows.json`, `isolated2-costs-latest.json`, `isolated3-costs-snowflake.json`, `isolated2-variation.json`, `d1_billing.json` | October billing and variation summaries: valid windows, billed cost, run-to-run spread and Jobs cost per job run |
 
-Raw files are JSON Lines, named `<workload>-<setup>-sf<scale>-<timestamp>.jsonl`, with timestamps in local SF time. Files ending in `.enriched.jsonl` add the server-side timings. The cost-per-DBU comments in `config*.yaml` date from the October round; the November cost files use the same list prices.
+Raw files are JSON Lines, named `<workload>-<setup>-sf<scale>-<timestamp>.jsonl`, with timestamps in local SF time. Files ending in `.enriched.jsonl` add the server-side timings.
 
 ## What has not run yet
 
 - ETL from raw files at 100 GB and 1 TB. It has run at 10 GB only.
 - Tuned tables at 1 TB. They have run at 100 GB only.
-- A billed run of the 99-query suite. Its 2026-10 timings are in `results/reported/`, but no billing window was recorded for it.
 
 Still open before this is final: a review of the queries and SQL by an expert on each platform. The TPC fair-use disclaimer is in the License section.
 
